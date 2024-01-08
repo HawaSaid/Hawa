@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../assets/img/logo.svg";
-import nav1icon from "../assets/img/icons8-linkedin-16.svg";
-import nav2icon from "../assets/img/icons8-github.svg";
+import nav1icon from "../assets/img/nav-icon1.svg";
+import nav2icon from "../assets/img/github.svg";
 import nav3icon from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
