@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import { ArrowRightCircle, Download } from "react-bootstrap-icons";
 
 export const Banner =()=>{
     const [loopNum, setLoopNum]= useState(0);
@@ -16,8 +15,16 @@ export const Banner =()=>{
             tick();
         }, delta)
 
+<<<<<<< Updated upstream
         return () => {clearInterval(ticker)};
     }, [text])
+=======
+    return () => {
+      clearInterval(ticker);
+    };
+    
+  }, [text, cursorVisible]);
+>>>>>>> Stashed changes
 
     const tick =() =>{
         let i=loopNum % toRotate.length;
@@ -38,6 +45,7 @@ export const Banner =()=>{
             setDelta(500);
         }
     }
+<<<<<<< Updated upstream
 
     return(
         <section className="banner" id="home">
@@ -55,6 +63,59 @@ export const Banner =()=>{
                     </Col>
                 </Row>
             </Container>
+=======
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
+    }
+  };
+  const downloadCV = () => {
+    const path = process.env.PUBLIC_URL + '/hawa_afnane_said_cv.pdf';
+    const link = document.createElement('a');
+    link.href = path;
+    link.download = 'hawa_afnane_said_cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
+  return (
+    <section className="banner" id="home">
+      <Container>
+        <Row className="align-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <h1>{`Hi, I'm Hawa`}<span className="wrap"> , an Aspiring {text}</span></h1>
+            <p>
+              Hi! I'm a second-year Software Engineering
+              Student at Concordia University who loves to game and code in her
+              free time and is intrigued by large-scale, high-impact products. 
+            </p>
+            <div className="d-flex">
+            <button className="CV" onClick={downloadCV}>
+                <Download size={25}/> &nbsp; Download CV 
+              </button>
+              <button
+                className="LetsConnect mr-2" 
+                onClick={() => console.log("connect")}
+              >
+                Let's Connect <ArrowRightCircle size={25} />
+              </button>
+            </div>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <div className="tree">
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+>>>>>>> Stashed changes
 
         </section>
     )
