@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from "../assets/img/logo.svg";
-import nav1icon from "../assets/img/nav-icon1.svg";
+import logo from "../assets/img/logo.png";
+import nav1icon from "../assets/img/linkedin.svg";
 import nav2icon from "../assets/img/github.svg";
-import nav3icon from "../assets/img/nav-icon3.svg";
+import nav3icon from "../assets/img/envelope.svg";
 
 export const NavBar = () => {
     const[activeLink, setActiveLink]=useState('home');
@@ -33,7 +33,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo"/>
+            <img src={logo} alt="Logo" className="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
         <span className='navbar-toggler-icon'></span>
@@ -47,9 +47,9 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="#"><img src={nav1icon} alt=""/></a>
-                <a href="#"><img src={nav2icon} alt=""/></a>
-                <a href="#"><img src={nav3icon} alt=""/></a>
+                <a href="https://www.linkedin.com/in/hawa-afnane-said/"><img src={nav1icon} alt=""/></a>
+                <a href="https://github.com/HawaSaid"><img src={nav2icon} alt=""/></a>
+                <a href="mailto:hawaAfnane.engineer@gmail.com"><img src={nav3icon} alt=""/></a>
             </div>
         <button className="vvd" onClick={()=> console.log('connect')}><span>Let's Connect</span></button>
           </span>

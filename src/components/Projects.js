@@ -2,7 +2,7 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projImg1 from "../assets/img/Pet_Adoption_Website.png";
 import projImg2 from "../assets/img/Real_Estate_System.png";
 import projImg3 from "../assets/img/project-img3.png";
-import ProjectCards from "../components/ProjectsCards";
+import ProjectCards from "../components/ProjectCards";
 
 export const Projects = () => {
     const projects = [

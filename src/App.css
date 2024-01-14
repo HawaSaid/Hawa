@@ -232,9 +232,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 .logo{
-  width:155px;
-  height:155px;
+  width:137px;
+  height:137px;
   text-align: left;
+  margin-top:20px;
 }
 .App-logo{
   height: 40vmin;
@@ -319,6 +320,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .LetsConnect {
+  display: inline-block;
+  margin: 0 auto;
+  color: rgb(237, 107, 170) !important;;
+  text-align: center;
+  padding: 20px 40px; /* Adjust the padding as needed for width and height */
+  border: 2px solid rgb(237, 107, 170) ; /* White border */
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
+.CV{
   display: inline-block;
   margin: 0 auto;
   color: rgb(237, 107, 170) !important;;
