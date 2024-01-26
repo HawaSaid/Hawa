@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle, Download } from "react-bootstrap-icons";
+import heartGif from "../assets/img/heart.gif";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -9,7 +10,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000; 
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -61,22 +62,18 @@ export const Banner = () => {
             <p>
               Hi! I'm a second-year Software Engineering
               Student at Concordia University who loves to game and code in her
-              free time and is intrigued by large-scale, high-impact products. 
+              free time and is intrigued by large-scale, high-impact products.
             </p>
             <div className="d-flex">
               <button className="CV" onClick={downloadCV}>
-                <Download size={25}/> &nbsp; Download CV
-              </button>
-              <button
-                className="LetsConnect mr-2" 
-                onClick={() => console.log("connect")}
-              >
-                Let's Connect <ArrowRightCircle size={25} />
+                <Download size={25} /> &nbsp; Download CV
               </button>
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <div className="tree">
+            <div className="heart-gif">
+              {/*https://tenor.com/view/hearts-sparkling-pinkheart-gif-19094455?utm_source=share-button&utm_medium=Social&utm_content=pinterest */}
+              <img src={heartGif} alt="Heart GIF" />
             </div>
           </Col>
         </Row>
