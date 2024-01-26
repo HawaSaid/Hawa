@@ -6,7 +6,7 @@ import heartGif from "../assets/img/heart.gif";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Software Engineer"];
+  const toRotate = ["Web Developer", "Software Engineer","Game Developer"];
   const [text, setText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -58,7 +58,7 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <h1>{`Hi, I'm Hawa`}<span className="wrap"> , an Aspiring {text}</span></h1>
+            <h1>{`Hi! I'm Hawa`}<span className="wrap"> , an Aspiring {text}</span></h1>
             <p>
               Hi! I'm a second-year Software Engineering
               Student at Concordia University who loves to game and code in her

@@ -237,10 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
   margin-top:20px;
 }
-.App-logo{
-  height: 40vmin;
-  pointer-events: none;
-}
+
 /* Banner CSS*/
 .banner{
   margin-top:0;
@@ -301,6 +298,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner img{
   animation: updown 3s linear infinite;
+  margin-top: -30%;
 }
 
 @keyframes updown {
@@ -548,7 +546,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button {
   font-weight: 700;
-  color: #a9ebfd;
+  color: #000000;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
@@ -577,6 +575,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+/*Footer css*/
+.footer{
+  padding: 0 0 50px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
