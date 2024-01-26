@@ -31,7 +31,7 @@ export const Projects = () => {
                         <h2> Projects </h2>
                         <br/>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActiveKey="/home" className="justify-content-center">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
                                 <Nav.Link eventKey="first">Tab One</Nav.Link>
                             </Nav.Item>
