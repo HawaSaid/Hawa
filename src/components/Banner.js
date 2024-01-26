@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle, Download } from "react-bootstrap-icons";
 import heartGif from "../assets/img/heart.gif";
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -58,6 +60,9 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+            {({isVisible}) =>
+            <div className={isVisible ? "animated_animated animate_fadeIn":""}>
             <h1>{`Hi! I'm Hawa`}<span className="wrap"> , an Aspiring {text}</span></h1>
             <p>
               Hi! I'm a second-year Software Engineering
@@ -69,6 +74,8 @@ export const Banner = () => {
                 <Download size={25} /> &nbsp; Download CV
               </button>
             </div>
+            </div>}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div className="heart-gif">
