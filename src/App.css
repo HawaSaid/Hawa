@@ -378,6 +378,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.item img{
+  width: 200px;
+  height: 200px;
+}
 
 /* Projects CSS*/
 .project {
@@ -586,7 +590,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .footer p{
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
