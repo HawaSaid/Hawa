@@ -6,15 +6,14 @@ import logo from "../assets/img/logo.png";
 import nav1icon from "../assets/img/linkedin.svg";
 import nav2icon from "../assets/img/github.svg";
 import nav3icon from "../assets/img/envelope.svg";
-import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
 
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => {
@@ -32,6 +31,10 @@ export const NavBar = () => {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+  }
+  const onclickletsconnect =()=>{
+    navigate('/LetsConnect');
+
   }
 
   return (
@@ -55,7 +58,7 @@ export const NavBar = () => {
               <a href="https://github.com/HawaSaid"><img src={nav2icon} alt="" /></a>
               <a href="mailto:hawaAfnane.engineer@gmail.com"><img src={nav3icon} alt="" /></a>
             </div>
-              <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+              <button className="vvd" onClick={onclickletsconnect}><span>Let's Connect</span></button>
           </span>
 
         </Navbar.Collapse>

@@ -35,8 +35,7 @@ export const Skills = () => {
               <h2>
                 Skills
               </h2>
-              <p>During my time at Concordia Univeristy, I acquired multiple skills that will serve me in my software <br />  engineering career  and will continue to acquire more in the future.</p>
-              <br />
+              <p> Here are the skills I acquired during the projects I worked on</p>
               <h3>
                 1. Web Development
               </h3>
@@ -77,6 +76,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={meter2} alt="Image" />
                   <h5><span> Python </span> </h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Image" />
+                  <h5><span> C </span> </h5>
                 </div>
               </Carousel>
             </div>
