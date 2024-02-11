@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle, Download } from "react-bootstrap-icons";
+import { Download } from "react-bootstrap-icons";
 import heartGif from "../assets/img/heart.gif";
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
@@ -46,7 +46,7 @@ export const Banner = () => {
     }
   };
   const downloadCV = () => {
-    const path = process.env.PUBLIC_URL + '/hawa_afnane_said_cv.pdf';
+    const path = process.env.PUBLIC_URL + '/Hawa_Afnane_Said_resume.pdf';
     const link = document.createElement('a');
     link.href = path;
     link.download = 'hawa_afnane_said_cv.pdf';
@@ -67,7 +67,7 @@ export const Banner = () => {
             <p>
               Hi! I'm a second-year Software Engineering
               Student at Concordia University who loves to game and code in her
-              free time and is intrigued by large-scale, high-impact products.
+              free time.
             </p>
             <div className="d-flex">
               <button className="CV" onClick={downloadCV}>
